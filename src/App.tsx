@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 import { Brain, Dice1, Target, Sparkles, ChevronRight } from "lucide-react";
 
@@ -19,20 +18,20 @@ export default function TopKTopPGuide() {
     { word: "city", prob: 0.01 },
   ];
 
-  const getTopKTokens = () => {
-    return exampleTokens.slice(0, topK);
-  };
+  // const getTopKTokens = () => {
+  //   return exampleTokens.slice(0, topK);
+  // };
 
-  const getTopPTokens = () => {
-    let cumulative = 0;
-    const result = [];
-    for (const token of exampleTokens) {
-      cumulative += token.prob;
-      result.push(token);
-      if (cumulative >= topP) break;
-    }
-    return result;
-  };
+  // const getTopPTokens = () => {
+  //   let cumulative = 0;
+  //   const result = [];
+  //   for (const token of exampleTokens) {
+  //     cumulative += token.prob;
+  //     result.push(token);
+  //     if (cumulative >= topP) break;
+  //   }
+  //   return result;
+  // };
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
